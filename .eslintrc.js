@@ -1,50 +1,31 @@
-/*
- * @Author: wenlin
- * @Date: 2020-05-06 16:28:59
- * @LastEditors: wenlin
- * @LastEditTime: 2020-11-12 13:18:46
- * @Description:
- *
- * "off" 或 0 - 关闭规则
- * "warn" 或 1 - 开启规则，使用警告级别的错误：warn (不会导致程序退出),
- * "error" 或 2 - 开启规则，使用错误级别的错误：error (当被触发的时候，程序会退出)
- */
-
-// 1. 关闭段落校验
-// /* eslint-disable */
-// /* eslint-enable */
-// 2. 关闭当前行校验
-// // eslint-disable-line
-// 3. 关闭下一行校验
-// // eslint-disable-next-line
-
 module.exports = {
   root: true,
-  env: {
-    node: true
-  },
-  globals: {
-  },
-  extends: [
-    'alloy',
-    'alloy/vue',
-    'alloy/typescript',
+  env: { node: true },
+  globals: {},
+  extends: ['alloy', 'alloy/vue', 'alloy/typescript'],
+  plugins: ['prettier'],
+  overrides: [
+    {
+      files: ['*.css', '*.scss']
+      // processor: 'a-plugin/markdown'
+    }
   ],
-  parserOptions: {
-  },
+  parserOptions: {},
   rules: {
     'prettier/prettier': [
       'error',
       {
+        endOfLine: 'auto', // 换行格式不做检查，换行格式有lf、cr，由于历史原因，windows下和linux下的文本文件的换行符不一致。
         printWidth: 120, // 单行长度，默认80
         singleQuote: true, // 单引号
+        jsxSingleQuote: false, // jsx 不使用单引号，而使用双引号
         trailingComma: 'none', // 在对象或数组最后一个元素后面是否加逗号
-        bracketSpacing: true, // 在对象，数组括号与文字之间加空格 "{ foo: bar }"
-        jsxBracketSameLine: true, // 在jsx中把'>' 是否单独放一行
-        semi: false,
-        endOfLine: 'auto' // 换行格式不做检查，换行格式有lf、cr，由于历史原因，windows下和linux下的文本文件的换行符不一致。
+        jsxBracketSameLine: false, // jsx 标签的反尖括号需要换行
+        arrowParens: 'avoid' // 箭头函数，只有一个参数的时候，也需要括号
+        // bracketSpacing: true, // 在对象，数组括号与文字之间加空格 "{ foo: bar }"
+        // semi: false, 分号结尾
       }
-    ],
+    ]
     // 'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     // 'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     // semi: [2, 'never'], //语句强制分号结尾
@@ -64,4 +45,4 @@ module.exports = {
     // // "@typescript-eslint/no-unused-vars": [1],
     // '@typescript-eslint/no-var-requires': [0]
   }
-}
+};
