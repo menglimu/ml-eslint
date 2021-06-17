@@ -1,8 +1,8 @@
 {
   "name": "ml-eslint",
   "version": "1.0.3",
-  "description": "vue2 ts的eslint校验规则, vue cli的ts prettier 加部分自定义。使用腾讯的alloy的eslint规则+prettier",
-  "main": "index.js",
+  "description": "vue2 ts的eslint/stylelint校验规则",
+  "main": ".eslintrc.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -32,9 +32,8 @@
     "eslint-plugin-vue": "^7.11.0",
     "prettier": "^2.3.1",
     "stylelint": "^13.13.1",
-    "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-recess-order": "^2.4.0",
-    "stylelint-config-standard-scss": "^1.1.0",
+    "stylelint-config-standard": "^22.0.0",
     "stylelint-order": "^4.1.0",
     "stylelint-scss": "^3.19.0",
     "typescript": "^4.3.2",
