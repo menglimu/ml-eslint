@@ -6,6 +6,8 @@ module.exports = {
   plugins: ['prettier'],
   parserOptions: {},
   rules: {
+    eqeqeq: [2, 'allow-null'], // 使用 === 替代 ==
+    semi: [2, 'never'], // 语句强制分号结尾
     'prettier/prettier': [
       'error',
       {
