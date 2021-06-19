@@ -1,6 +1,4 @@
 module.exports = {
-  root: true,
-  env: { node: true },
   globals: {},
   extends: ['alloy', 'alloy/vue', 'alloy/typescript'],
   plugins: ['prettier'],
@@ -21,5 +19,14 @@ module.exports = {
         arrowParens: 'avoid' // 箭头函数，只有一个参数的时候，也需要括号
       }
     ]
-  }
+  },
+  overrides: [
+    {
+      files: ['*.ts', '*.tsx'],
+      rules: {
+        // 'no-unused-vars': 0,
+        'no-undef': 0
+      }
+    }
+  ]
 }
