@@ -1,14 +1,6 @@
-<!--
- * @Author: wenlin
- * @Date: 2021-01-10 18:46:34
- * @LastEditors: wenlin
- * @LastEditTime: 2021-01-10 21:11:22
- * @Description:  
--->
-
 <script lang="tsx">
-import Vue from 'vue'
-import siderbar from './siderbar.vue'
+import Vue from 'vue';
+import siderbar from './siderbar.vue';
 
 export default Vue.extend({
   name: 'Layout',
@@ -22,9 +14,9 @@ export default Vue.extend({
           <router-view class="container-page" />
         </div>
       </div>
-    )
+    );
   }
-})
+});
 </script>
 <style lang="scss" scoped>
 .layout {
