@@ -1,7 +1,7 @@
 module.exports = {
   globals: {},
-  extends: ['alloy', 'alloy/vue', 'alloy/typescript'],
-  plugins: ['prettier'],
+  extends: ['alloy', 'alloy/typescript', 'plugin:vue/essential'],
+  plugins: ['vue', 'prettier'],
   parserOptions: {},
   rules: {
     eqeqeq: [2, 'allow-null'], // 使用 === 替代 ==
