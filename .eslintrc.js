@@ -1,6 +1,6 @@
 module.exports = {
   globals: {},
-  extends: ['alloy', 'alloy/typescript', 'alloy/vue'], // 'plugin:vue/essential'   'alloy/typescript'
+  extends: ['alloy', 'alloy/typescript'], // 'plugin:vue/essential'   'alloy/typescript'
   plugins: ['prettier'], // vue
   parserOptions: {},
   rules: {
@@ -23,11 +23,15 @@ module.exports = {
   overrides: [
     {
       files: ['*.ts', '*.tsx'],
-      extends: ['alloy', 'alloy/typescript'],
       rules: {
         // 'no-unused-vars': 0,
         'no-undef': 0
       }
+    },
+    {
+      files: ['*.vue'],
+      extends: ['alloy/vue', '@vue/typescript/recommended'],
+      rules: {}
     }
   ]
 };

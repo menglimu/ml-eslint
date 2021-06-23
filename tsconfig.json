@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    // 运行通过对象的aa.bb的方式取值
+    "suppressImplicitAnyIndexErrors": true,
+    "jsx": "preserve",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "noImplicitAny": false, // 允许隐式any
+    "strictNullChecks": false, // 不检测null和undefined的赋值
+    "lib": ["esnext", "dom"],
+    "baseUrl": "./",
+  },
+  "include": ["**/*.ts", "**/*.d.ts", "**/*.tsx", "**/*.vue"]
+}
