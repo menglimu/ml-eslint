@@ -4,7 +4,7 @@ module.exports = {
   plugins: ['prettier'], // vue
   parserOptions: {},
   rules: {
-    eqeqeq: [2, 'allow-null'], // 使用 === 替代 ==
+    eqeqeq: [1, 'allow-null'], // 使用 === 替代 ==
     // semi: [2, 'never'], // 语句强制分号结尾
     'prettier/prettier': [
       'error',
