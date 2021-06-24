@@ -1,7 +1,7 @@
 <script lang="tsx">
 import Vue from 'vue';
 import siderbar from './siderbar.vue';
-// let a = null as any;
+let a = null as any;
 export default Vue.extend({
   name: 'Layout',
   components: { siderbar },
