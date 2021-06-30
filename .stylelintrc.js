@@ -1,7 +1,7 @@
 module.exports = {
   root: true,
   extends: ['stylelint-config-standard', "stylelint-config-recess-order"],
-  plugins: ['stylelint-order', "stylelint-scss"],
+  plugins: ["stylelint-scss",'stylelint-order'],
   rules: {
     "value-keyword-case": null,
     "at-rule-no-unknown": [true, {
