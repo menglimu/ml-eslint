@@ -11,7 +11,8 @@ module.exports = {
       files: ["*.ts", "*.tsx"],
       rules: {
         // 'no-unused-vars': 0,
-        "no-undef": 0,
+        // "no-undef": 0,
+        "@typescript-eslint/consistent-type-assertions": 0
       },
     },
     {
