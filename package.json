@@ -1,6 +1,6 @@
 {
   "name": "ml-lint",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "vue2 ts的eslint/stylelint校验规则",
   "main": "index.js",
   "scripts": {
