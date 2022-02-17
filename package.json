@@ -15,7 +15,7 @@
     "mltestsh": "./sh.js"
   },
   "files": [
-    "sh",
+    "sh.js",
     "index.js",
     ".eslintrc.js",
     ".stylelintrc.js",
