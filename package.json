@@ -12,7 +12,7 @@
     "url": "git+https://github.com/menglimu/ml-eslint.git"
   },
   "bin": {
-    "mltestsh": "./sh"
+    "mltestsh": "./sh.js"
   },
   "files": [
     "sh",
