@@ -11,11 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/menglimu/ml-eslint.git"
   },
-  "bin": {
-    "mltestsh": "./sh.js"
-  },
   "files": [
-    "sh.js",
     "index.js",
     ".eslintrc.js",
     ".stylelintrc.js",
